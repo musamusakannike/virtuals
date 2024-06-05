@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background: rgba(25, 25, 25, 0.5);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  nav a {
+    margin: 1rem 0;
+  }
+  #features .grid-container, #testimonials .grid-container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    padding-inline: 20px;
+  }
+  #workflow .grid-container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    padding-inline: 20px;
+  }
+  #pricing .grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+  }
+  #features .grid-container, #testimonials .grid-container, footer {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    padding-inline: 25px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  header > div > h1 {
+    font-size: 36px;
+  }
+  main h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  header > div > h1 {
+    font-size: 60px;
+  }
+  main h2 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header > div {
+    padding: 50px 30px;
+  }
+  header > div p {
+    margin: auto;
+    max-width: 65vw;
+  }
+  #features .grid-container, #testimonials .grid-container, footer {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 25px;
+  }
+  #workflow .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	padding-inline: 25px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+	#pricing .grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding-inline: 50px;
+	grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+	nav .grid-container {
+	position: absolute;
+	right: 50px;
+	}
+  header > div > h1 {
+    font-size: 72px;
+  }
+  main h2 {
+    font-size: 60px;
+  }
+  #features .grid-container, #testimonials .grid-container, footer {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 40px;
+  }
+}
